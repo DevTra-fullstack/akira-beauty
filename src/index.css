@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 10 30% 98%;
+    --foreground: 0 0% 29%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 29%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 29%;
+
+    --primary: 10 58% 90%;
+    --primary-foreground: 0 0% 29%;
+
+    --secondary: 10 30% 97%;
+    --secondary-foreground: 0 0% 29%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 10 58% 90%;
+    --accent-foreground: 0 0% 29%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 10 25% 90%;
+    --input: 10 25% 90%;
+    --ring: 10 58% 90%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .animate-fade {
+    @apply animate-fade-in;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .gold-text {
+    @apply text-akira-gold;
+  }
+  
+  .product-card {
+    @apply transition-all duration-300 hover:shadow-md;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
