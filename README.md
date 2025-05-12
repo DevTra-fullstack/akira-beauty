@@ -1,2 +1,1 @@
-# akira-beauty
-my practice
+
